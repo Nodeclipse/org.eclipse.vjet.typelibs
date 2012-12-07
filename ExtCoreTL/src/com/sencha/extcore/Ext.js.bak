@@ -1,0 +1,66 @@
+vjo.ctype('com.sencha.extcore.Ext') //< public
+//> needs sencha.touch.Component
+//> needs sencha.touch.Panel
+//> needs sencha.touch.TabPanel
+.globals({
+	Ext : null //< type::Ext
+})
+.props({
+	data : vjo.otype()
+	.defs({ cfg : { tabletStartupScreen : null //< public String
+				  , phoneStartupScreen  : null //< public String
+				  , icon				: null //< public String
+				  , glossOnIcon         : null //< public String
+				  , onReady             : null //< public Function
+				  }	
+	})
+	.endType()
+})
+.protos({
+	// vvvvvvvvvv Constructors vvvvvvvvvv
+	
+	constructs : function() {
+	}
+	
+	// ^^^^^^^^^^ Constructors ^^^^^^^^^^
+	
+	
+	// vvvvvvvvvv Exported Properties vvvvvvvvvv
+	
+	, SSL_SECURE_URL 		   : null //< public String
+	, emptyFn 				   : null //< public Function
+	, enableGarbageCollection  : null //< public boolean
+	, enableListenerCollection : null //< public boolean
+	, isReady				   : null //< public boolean
+	, isSecure				   : null //< public boolean
+	, version				   : null //< public String
+	
+	// ^^^^^^^^^^ Exported Properties ^^^^^^^^^^
+	
+	
+	// vvvvvvvvvv Exported Types vvvvvvvvvv
+	
+	//> Panel Panel( Panel.data.cfg cfg )
+	, Panel : vjo.NEEDS_IMPL
+	
+	//> TabPanel TabPanel( Object o )
+	, TabPanel : vjo.NEEDS_IMPL
+
+	// ^^^^^^^^^^ Exported Types ^^^^^^^^^^
+	
+	//> Object apply( Object o, Object config, Object defaults )
+	, apply : vjo.NEEDS_IMPL
+	
+	//> Object applyIf( Object o, Object config )
+	, applyIf : vjo.NEEDS_IMPL
+	
+	//> Component create( Object config, Object defaultType )
+	, create : vjo.NEEDS_IMPL
+	
+	//> void setup( data::cfg cfg ) 
+	, setup : vjo.NEEDS_IMPL	
+})
+.options({
+	metatype : true
+})
+.endType();
